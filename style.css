@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #111;
+  overflow-x: hidden;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#lottie-container {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  left: 5%;
+  z-index: 1;
+  top: -8%;
+}
+
+.section-1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-1 h1 {
+  color: #fff;
+  font-size: 27em;
+}
+
+.section-1 .name-1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -3%;
+  left: 42%;
+}
+
+.section-1 .name-2 {
+  position: absolute;
+  left: 45%;
+  transform: translateX(-50%);
+  top: 32%;
+}
+
+#spline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 2;
+  /* background-color: white; */
+}
+
+#spline-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
