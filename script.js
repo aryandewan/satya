@@ -74,11 +74,13 @@ const resumePg2 = document.querySelector(".resume-pg-2");
 resumePg2.addEventListener("click", () => {
   resumePg2.style.zIndex = "2";
   resumePg1.style.zIndex = "1";
+  resumePg2.style.opacity = "1";
   resumePg2.style.transform = "translate(0px)";
 
   resumeContainer.addEventListener("mouseleave", () => {
     resumePg2.style.zIndex = "1";
     resumePg1.style.zIndex = "2";
+    resumePg2.style.opacity = "0.5";
     resumeContainer.addEventListener("mouseenter", () => {
       resumePg2.style.transform = "translate(100px)";
     });

@@ -77,6 +77,7 @@ body {
 
 .section-3 .resume-container .resume-pg-2 {
   z-index: 1;
+  opacity: 0.5;
   transform-origin: right;
 }
 
