@@ -65,3 +65,25 @@ lottie.loadAnimation({
   autoplay: true,
   path: "./lottie/Hi.json",
 });
+
+// Add this function to handle the hover effect
+const resumeContainer = document.querySelector(".resume-container");
+const resumePg1 = document.querySelector(".resume-pg-1");
+const resumePg2 = document.querySelector(".resume-pg-2");
+
+resumePg2.addEventListener("click", () => {
+  resumePg2.style.zIndex = "2";
+  resumePg1.style.zIndex = "1";
+  resumePg2.style.transform = "translate(0px)";
+
+  resumeContainer.addEventListener("mouseleave", () => {
+    resumePg2.style.zIndex = "1";
+    resumePg1.style.zIndex = "2";
+    resumeContainer.addEventListener("mouseenter", () => {
+      resumePg2.style.transform = "translate(100px)";
+    });
+    resumeContainer.addEventListener("mouseleave", () => {
+      resumePg2.style.transform = "translate(0px)";
+    });
+  });
+});
